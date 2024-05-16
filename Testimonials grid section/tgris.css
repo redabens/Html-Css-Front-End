@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    font-size: 13px;
+    line-height: 1.4em;
+}
+h4{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    opacity: 50%;
+}
+p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(0, 0%, 81%);
+    font-weight: 600;
+    z-index: 2;
+}
+.par1{
+    font-size: 19px;
+}
+.par2{
+    font-size: 13px;
+    opacity: 70%;
+}
+.black{
+    color: hsl(217, 19%, 35%) !important;
+}
+.white{
+    color: hsl(0, 0%, 100%) !important;
+}
+.case1,.case2,.case3,.case4,.case5{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+.case1{
+    background-color: hsl(263, 55%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.case2{
+    background-color: hsl(217, 19%, 35%);
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.case4{
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.case3{
+    background-color: hsl(0, 0%, 100%);
+    grid-column-start: 1;
+    grid-column-end: 2;   
+}
+.case5{
+    background-color: hsl(0, 0%, 100%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+img{
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    width: 36.4px;
+    height: 36.4px;
+}
+.ttr{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    gap: 10px;
+    font-weight: 500;
+}
+span{
+    font-family: 'Monda', sans-serif;
+    font-weight: 700;
+    color: hsl(263, 55%, 70%);
+    display: block;
+    position: relative;
+    font-size: 200px;
+    top: 50px;
+    left: 255px;
+    z-index: 1;
+}
+@media (width<=375px){
+    .container{
+        width: 355px;
+    }
+}
+@media (width>375px){
+    .container{
+        display: grid;
+        grid-template-columns: 268.75px 268.75px 268.75px 268.75px;
+        grid-template-rows: 1fr 1fr;
+        grid-gap:25px;
+    }
+}
