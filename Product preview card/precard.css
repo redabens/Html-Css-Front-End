@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+body{
+    background-color:hsl(30, 38%, 92%);
+    width: 100vw;
+    height:100vh;
+}
+h1{
+    font-family: "Fraunces",sans-serif;
+    font-size: 1.75em;
+    color: hsl(212, 21%, 14%);
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 500;
+    color: hsl(228, 12%, 55%);
+}
+h2{
+    font-family: "Fraunces",sans-serif;
+    color: hsl(158, 36%, 45%);
+}
+span{
+    text-decoration: line-through !important;
+    font-size: 10px;
+}
+.bloc2{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+.prix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.boutton{
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%) !important;
+    background-color:hsl(158, 36%, 37%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;    
+}
+a{
+    font-weight: 700;
+}
+a:active{
+    background-color: hsl(158, 36%, 22%);
+}
+
+@media (width<= 380px){
+    #dsktp{
+        display:none;
+    }
+    #mbl{
+        width: 280px;
+        height: 210px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;    
+    }
+    .container{
+        width: 280px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .bloc2{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 320px;
+    }
+    .bloc1{
+        height: 210px;
+    }
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .boutton{
+        width: 230px;
+    }
+}
+
+@media (width>380px){
+    #mbl{
+        display: none;
+    }
+    #dsktp{
+        width: 240px;
+        height: 380px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 480px;
+        height: 380px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+    }
+    .bloc2{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .boutton{
+        width: 190px;
+    }
+}
